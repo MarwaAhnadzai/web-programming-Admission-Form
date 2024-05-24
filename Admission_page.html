@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission form - Sheridan College</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+
+      <div class="nav-links" id="navLinks">
+        <span class="icon" onclick="hidemenu()">&#10005;</span>  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Admission_page.html">Admission</a></li>
+          <li><a href="index.html#course_call">Programs</a></li>
+          <li><a href="fees_page.html">Fees</a></li>
+          <li><a href="Contact_page.html">Contact</a></li>
+        </ul>
+      </div> 
+      <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+
+    <div class="wrapper">
+      <div class="r_form_wrap">
+        <div class="title">
+          <p>Admission form - Sheridan College</p>
+        </div>
+        
+        <!-- Admission from -->
+        <div class="r_form">
+          <form method="post" onsubmit="return validateForm()">
+            <!-- Error message container -->
+            <div id="errorMessages"></div>
+
+            <div class="input_wrap">
+              <label for="yourname">Your Name</label>
+              <div class="input_item">
+                <i class="fa fa-user" id="icon"></i>
+                <input type="text" name="your name" class="input" id="yourname" placeholder="Enter your name" required>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <label for="emailaddress">Email Address</label>
+              <div class="input_item">
+                <i class="fa fa-envelope" id="icon"></i>
+                <input type="email" name="email address" class="input" id="emailaddress" placeholder="Enter your email address" required>
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <label for="phone">Phone</label>
+              <div class="input_item">
+                <i class="fa fa-phone-square" id="icon"></i>
+                <input type="tel" name="phone" class="input" id="phone" placeholder="Enter your phone number" required>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <label>Gender</label>
+              <div class="input_radio">
+                <div class="input_radio_item">
+                  <input type="radio" id="male" name="gender" class="radio" value="male" checked>
+                  <label for="male" class="radio_mark">
+                    <ion-icon class="i" name="male-sharp"></ion-icon>
+                    Male</label>
+                </div>
+                <div class="input_radio_item">
+                  <input type="radio" id="female" name="gender" class="radio" value="female">
+                  <label for="female" class="radio_mark">
+                    <ion-icon class="i" name="female-sharp"></ion-icon>
+                    Female</label>
+                </div>
+                <div class="input_radio_item">
+                  <input type="radio" id="others" name="gender" class="radio" value="others">
+                  <label for="others" class="radio_mark">
+                    <ion-icon class="i" name="male-female-sharp"></ion-icon>
+                    Others</label>
+                </div>
+              </div>
+            </div>
+  
+            <div class="input_wrap">
+              <label for="dob">Date Of Birth</label>
+              <div class="input_item">
+                <i class="fa fa-calendar" id="icon"></i>
+                <input type="date" name="dob" class="input" id="dob" required>
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <label for="course">Program</label>
+              <div class="input_item">
+                <select id="course" name="course" class="input" required>
+                  <option value="select">Select your program</option>
+                  <option value="computer_science">Computer Science</option>
+                  <option value="business_administration">Business Administration</option>
+                  <option value="visual_arts">Visual Arts</option>
+                  <option value="nursing">Nursing</option>
+                  <option value="engineering">Engineering</option>
+                  <option value="graphic_design">Graphic Design</option>
+                  <option value="culinary_arts">Culinary Arts</option>
+                  <option value="film_production">Film Production</option>
+                  <option value="music_performance">Music Performance</option>
+                  <option value="journalism">Journalism</option>
+                  <!-- Add more programs here -->
+                </select>							
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <label for="file">High School Transcript</label>
+              <div class="input_item">
+                <i class="fa fa-file" id="icon"></i>
+                <input type="file" name="file" class="input" id="file" required>
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <label for="password">Password</label>
+              <div class="input_item">
+                <i class="fa fa-key" id="icon"></i>
+                <input type="password" name="password" class="input" id="password" placeholder="Enter your password" required>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <label for="confirmpassword">Confirm Password</label>
+              <div class="input_item">
+                <i class="fa fa-check-circle" id="icon"></i>
+                <input type="password" name="confirmpassword" class="input" id="confirmpassword" placeholder="Confirm your password" onkeyup="validatePassword()" required>
+              </div>
+            </div>
+
+            <input type="submit" class="button" value="Submit Application" id="submitButton">
+            <input type="reset" class="clear_ad" value="Clear">
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Submission Message -->
+    <div id="submissionMessage"></div>
+
+  </section>
+
+  <div class="none_div"></div>
+
+  <!-- JavaScript for this Web page -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="javascript/admission_script.js"></script>
+  <link rel="stylesheet" href="css/admission_style.css">
+  <script>
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+        if (password !== confirmPassword) {
+            document.getElementById("errorMessages").innerHTML = "<p>Passwords do not match</p>";
+            document.getElementById("submitButton").disabled = true;
+        } else {
+            document.getElementById("errorMessages").innerHTML = "";
+            document.getElementById("submitButton").disabled = false;
+        }
+    }
+
+    function validateForm() {
+        var fullname = document.getElementById("yourname").value;
+        var email = document.getElementById("emailaddress").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmpassword").value;
+        var phone = document.getElementById("phone").value;
+
+        var errors = [];
+
+        if (!fullname.trim()) {
+            errors.push("Full Name is required");
+        }
+
+        if (!email.trim()) {
+            errors.push("Email Address is required");
+        }
+
+        if (!password.trim()) {
+            errors.push("Password is required");
+        } else if (!isStrongPassword(password)) {
+            errors.push("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*)");
+        }
+
+        if (password !== confirmPassword) {
+            errors.push("Passwords do not match");
+        }
+
+        if (errors.length > 0) {
+            var errorMessage = "<ul>";
+            errors.forEach(function(error) {
+                errorMessage += "<li>" + error + "</li>";
+            });
+            errorMessage += "</ul>";
+            document.getElementById("errorMessages").innerHTML = errorMessage;
+            document.getElementById("submissionMessage").innerHTML = "";
+            return false;
+        } else {
+            document.getElementById("errorMessages").innerHTML = "";
+            document.getElementById("submissionMessage").innerHTML = "Submitting...";
+            // Simulate form submission (replace this with your actual form submission code)
+            setTimeout(function() {
+                document.getElementById("submissionMessage").innerHTML = "Your application was successfully submitted. Sheridan will contact you soon.";
+            }, 2000); // Simulate 2 seconds delay for submission
+            return true;
+        }
+    }
+
+    function isStrongPassword(password) {
+        var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+        return passwordPattern.test(password);
+    }
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showmenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hidemenu() {
+        navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
