@@ -36,6 +36,9 @@ For questions or feedback, please contact Marwa Ahmadzai at marwa7271483@gmail.c
 <img width="176" alt="Screenshot 2024-06-26 at 11 02 57 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/7a470499-2a7b-456f-b32d-814ca24ab544">
 <img width="1440" alt="Screenshot 2024-06-26 at 11 03 11 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/cc801aa8-f767-4148-bb28-c1634f6ea358">
 <img width="176" alt="Screenshot 2024-06-26 at 11 03 21 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/ebf4bf1f-477d-4b77-9cd6-d413ebf8836a">
+<img width="1435" alt="Screenshot 2024-06-26 at 11 08 10 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/67c23b27-ef17-4d22-beb8-7ca5c3a79466">
+<img width="1435" alt="Screenshot 2024-06-26 at 11 08 49 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/96e5aa57-7a46-45df-b921-16abd1006f15">
+
 
 
 
