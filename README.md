@@ -29,5 +29,17 @@ For questions or feedback, please contact Marwa Ahmadzai at marwa7271483@gmail.c
 
 ## Screenshots
 
-<img width="1440" alt="Screenshot 2024-06-26 at 11 01 44 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/8fb160d3-b2b6-4071-a759-34aea67f9352">
-<img width="176" alt="Screenshot 2024-06-26 at 11 03 21 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/5e76613c-0fc1-426d-b03b-b1973cd39b2b">
+<img width="1440" alt="Screenshot 2024-06-26 at 11 01 44 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/99d2c81d-e5c9-4bfa-8c4b-5594f712456f">
+<img width="1440" alt="Screenshot 2024-06-26 at 11 02 17 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/142005c5-91f9-4464-8f28-819672bf40d3">
+<img width="1440" alt="Screenshot 2024-06-26 at 11 02 29 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/ccd426e0-6bd8-4f92-8481-26141b3dff25">
+<img width="176" alt="Screenshot 2024-06-26 at 11 02 36 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/dc64fa0b-ab1d-49c6-8dfa-e1c15035501e">
+<img width="176" alt="Screenshot 2024-06-26 at 11 02 57 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/7a470499-2a7b-456f-b32d-814ca24ab544">
+<img width="1440" alt="Screenshot 2024-06-26 at 11 03 11 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/cc801aa8-f767-4148-bb28-c1634f6ea358">
+<img width="176" alt="Screenshot 2024-06-26 at 11 03 21 AM" src="https://github.com/MarwaAhnadzai/web-programming-Admission-Form/assets/99272137/ebf4bf1f-477d-4b77-9cd6-d413ebf8836a">
+
+
+
+
+
+
+
